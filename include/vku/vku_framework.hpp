@@ -11,6 +11,7 @@
 #ifndef VKU_FRAMEWORK_HPP
 #define VKU_FRAMEWORK_HPP
 
+#ifndef VKU_NO_GLFW
 #ifdef _WIN32
 #define VK_USE_PLATFORM_WIN32_KHR
 #define GLFW_EXPOSE_NATIVE_WIN32
@@ -22,7 +23,6 @@
 #define VKU_SURFACE "VK_KHR_xlib_surface"
 #endif
 
-#ifndef VKU_NO_GLFW
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 #include <GLFW/glfw3native.h>
